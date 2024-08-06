@@ -1,0 +1,76 @@
+.data-container {
+    height: 80vh; 
+    width: 100%;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .data-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+  }
+  
+  .loading-message,
+  .error-message {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+  }
+  
+  .grid-container {
+    flex: 1; /* Take up available space */
+    overflow: hidden; /* Hide overflow to ensure grid fits */
+  }
+  
+  .ag-theme-alpine {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .avatar-image:hover {
+    transform: scale(1.2);
+  }
+  
+  .export-button {
+    margin: 20px;
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    align-self: center;
+    position: relative; /* Ensure button can be positioned correctly */
+  }
+  
+  .export-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  
+  .export-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
